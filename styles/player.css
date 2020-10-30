@@ -1,0 +1,535 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+
+
+#title {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+#nav{
+    display: inline-block;
+    box-sizing: border-box;
+    width: 20%;
+    vertical-align:top;
+    height: 490px;
+    overflow-y:auto;
+    margin-top: 50px;
+    background-color: blue;
+}
+#nav_btn button{
+    display: block;
+    width: 100%;
+    padding: 20px 0;
+}
+#nav_btn i{
+    padding: 0 20px;
+}
+#music_menu_list li{
+    padding: 10px 15%;
+}
+
+
+#main{
+    display: inline-block;
+    box-sizing: border-box;
+    width: 59%;
+    overflow-y:auto;
+    margin-top: 50px;
+    height: 490px;
+}
+#information{
+    box-sizing: border-box;
+    width: 100%;
+}
+#cover_photo{
+    display: inline-block;
+    box-sizing: border-box;
+    width: 79%;
+}
+#menu_information{
+    display: inline-block;
+    box-sizing: border-box;
+    width: 20%;
+}
+#photo{
+    width: 100%;
+}
+#menu_information p{
+    padding: 10% 5%;
+}
+#menu_information span{
+    display: block;
+    text-align: center;
+}
+#song_list{
+    box-sizing: border-box;
+    width: 100%;
+    margin-bottom: 80px;
+    padding-top: 5%;
+}
+#song_list li{
+    padding: 10px 0;
+    margin: 0 10%;
+    position: relative
+}
+#song_list span{
+    position: absolute;
+    right: 0;
+}
+#song_list i{
+    padding-right: 5%;
+}
+
+#aside{
+    display: inline-block;
+    box-sizing: border-box;
+    width: 20%;
+    vertical-align:top;
+    overflow-y:auto;
+    height: 490px;
+    margin-top: 50px;
+}
+#aside p{
+    padding: 10px 0;
+    text-align: center;
+}
+#aside img{
+    width: 100%;
+}
+#article{
+    position: fixed;
+    bottom: 0;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: rgb(60, 60, 60);
+    height: 80px;
+}
+#now_play{
+    display: inline-block;
+    box-sizing: border-box;
+    height: 100%;
+    width: 20%;
+    text-align: center;   
+}
+#music_name{
+    padding: 5px 0 10px 0;
+}
+#control_menu{
+    display: inline-block;
+    box-sizing: border-box;
+    height: 100%;
+    width: 55%;
+    text-align: center;
+    vertical-align:top;
+}
+#control_menu button{
+    margin:5%;
+}
+#volume{
+    display: inline-block;
+    box-sizing: border-box;
+    height: 100%;
+    width: 24%;
+    vertical-align:top;
+    text-align: center;
+}
+#volume i{
+    margin: 10% 0;
+}
+#volume input{
+    vertical-align:middle;
+}
+
+/*----------------------------------------------------------------------------------------------------*/
+body{
+    background-color: black;
+    color: white;
+    font-family:Microsoft JhengHei;
+}
+#title{
+    font-size: 28px;
+    font-weight: bolder;
+    text-align: center;
+    padding: 10px 0;
+    background-color: rgb(50, 50, 50);
+}
+
+#nav_btn i{
+    font-size: 25px;
+}
+#nav_btn button{
+    font-weight: bold;
+    background: none;
+    border: none;
+    text-align: left;
+}
+
+#music_menu_list li{
+    font-size: 18px;
+}
+
+#menu_information span{
+    font-size: 20px;
+    font-weight: bold;
+    padding-top:10px;
+}
+#song_list{
+    font-size: 20px;
+}
+#aside p{
+    background-color: rgb(80, 80, 80);
+}
+#music_name{
+    font-size: x-large;
+    font-weight: bold;
+}
+#music_singer{
+    font-weight: bold;
+}
+#volume i{
+    font-size: 30px;
+}
+#control_menu button{
+    background: none;
+    border: none;
+    color: lightyellow;
+    font-size: 25px;
+}
+
+input[type="range"]{
+    -webkit-appearance: none;
+    width:150px;
+    height:5px;
+    outline : none;  
+    vertical-align: middle;
+}
+input[type="range"]::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    position: relative;    /* 設為相對位置，為了前後區塊的絕對位置而設定 */
+    width:20px;
+    height:20px;
+    background:yellow;
+    border-radius:50%;
+  }
+
+/*----------------------------------------------------------------------------------------------------*/
+@media (min-width: 768px) and (max-width: 991.99px){
+    #nav{
+        width: 20%;
+    }
+    #main{
+        width: 79%;
+    }
+    #aside{
+        display: block;
+        width: 100%;
+        margin-top: 5% 0;
+        margin-bottom: 80px;
+    }
+    #aside div{
+        display: inline-block;
+        box-sizing: border-box;
+        width: 49%;
+        padding: 1%;
+        vertical-align:top;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.99px){
+    #nav{
+        width: 19%;
+    }
+    #main{
+        width: 80%;
+    }
+    #aside{
+        display: block;
+        width: 100%;
+        margin-top: 5% 0;
+        margin-bottom: 80px;
+    }
+    #aside div{
+        display: inline-block;
+        box-sizing: border-box;
+        width: 49%;
+        padding: 1%;
+        vertical-align:top;
+    }
+    #cover_photo{
+        width: 100%;
+    }
+    #menu_information{
+        width: 100%;
+    }
+    #menu_information p{
+        display: inline-block;
+        padding: 5%;
+    }
+    #now_play{
+        width: 15%;
+    }
+    #control_menu{
+        width: 65%;
+    }
+    #volume{
+        width: 15%;
+    }
+    #music_name{
+        font-size: medium;
+        font-weight: bold;
+        padding: 10%;
+    }
+    #music_singer{
+        font-size: small;
+    }
+    #music_singer{
+        font-weight: normal;
+    }
+    #control_menu button{
+        margin: 8% 3%;
+    }
+    #volume i{
+        font-size: 20px;
+        margin: 40% 0;
+    }
+    input[type="range"]{
+        -webkit-appearance: none;
+        width:60px;
+        height:3px;
+        outline : none;  
+        vertical-align: middle;
+    }
+    input[type="range"]::-webkit-slider-thumb{
+        -webkit-appearance: none;
+        position: relative;    /* 設為相對位置，為了前後區塊的絕對位置而設定 */
+        width:10px;
+        height:10px;
+        background:yellow;
+        border-radius:50%;
+      }
+      #nav_btn button{
+        text-align: center;
+    }
+      #nav_btn span{
+          display: none;
+      }
+}
+
+@media (max-width: 575.99px){
+    #nav{
+        width: 100%;
+        height: auto;
+    }
+    #nav_btn button{
+        display: inline-block;
+        width: 20%;
+    }
+    #main{
+        width: 100%;
+        margin-top: 10px;
+    }
+    #aside{
+        display: block;
+        width: 100%;
+        margin-top: 5% 0;
+        margin-bottom: 80px;
+    }
+    #aside div{
+        display: inline-block;
+        box-sizing: border-box;
+        width: 49%;
+        padding: 1%;
+        vertical-align:top;
+    }
+    #cover_photo{
+        width: 100%;
+    }
+    #menu_information{
+        width: 100%;
+    }
+    #menu_information p{
+        display: inline-block;
+        padding: 5%;
+    }
+    #now_play{
+        width: 15%;
+    }
+    #control_menu{
+        width: 65%;
+    }
+    #volume{
+        width: 15%;
+    }
+    #music_name{
+        font-size: medium;
+        font-weight: bold;
+        padding: 10%;
+    }
+    #music_singer{
+        font-size: small;
+    }
+    #music_singer{
+        font-weight: normal;
+    }
+    #control_menu button{
+        margin: 8% 3%;
+    }
+    #volume i{
+        font-size: 20px;
+        margin: 40% 0;
+    }
+    #nav_btn button{
+        text-align: center;
+    }
+    #nav_btn span{
+        display: none;
+    }
+    input[type="range"]{
+        -webkit-appearance: none;
+        width:60px;
+        height:3px;
+        outline : none;  
+        vertical-align: middle;
+    }
+    input[type="range"]::-webkit-slider-thumb{
+        -webkit-appearance: none;
+        position: relative;    /* 設為相對位置，為了前後區塊的絕對位置而設定 */
+        width:10px;
+        height:10px;
+        background:yellow;
+        border-radius:50%;
+      }
+}

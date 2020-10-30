@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel=stylesheet type="text/css" href="styles/player.css">
+</head>
+<body>
+    <div id="title">Music Player</div>
+    <div id="nav">
+        <div id="nav_btn">
+            <button id="home"><i class="fa fa-home"></i><span>首頁</span></button>
+            <button id="search"><i class="fa fa-search"></i><span>搜尋</span></button>
+            <button id="music_hot"> <i class="fa fa-music"></i><span>熱播排行</span></button>
+            <button id="music_menu"><i class="fa fa-user"></i><span>你的音樂</span></button>
+        </div>
+        <ul id="music_menu_list" style="display: none;">
+            <li>真實 A-mei</li>
+            <li>依然范特西 Jay Chou</li>
+            <li>Afternoon Acoustic</li>
+            <li>Morning Stroll</li>
+            <li style="background-color: rgb(45, 45, 45);">隨播歌單</li>
+            <li>Peaceful Guitar</li>
+        </ul>
+    </div>
+    <div id="main">
+        <div id="information">
+            <div id="cover_photo"><img id="photo" src="https://picsum.photos/800/600"></div>
+            <div id="menu_information">
+                <p>列表名稱:<span>隨播歌單</span></p>
+                <p>建立者:<span>AAA</span></p>
+                <p>2020.09.17  共9首</p>
+            </div>
+        </div>
+        <ul id="song_list">
+            <li id="0"><i class="far fa-heart"></i><strong data-num="track01.mp3">Four More Weeks</strong><span>3:03</span></li>
+            <li id="1"><i class="far fa-heart"></i><strong data-num="track02.mp3">BeeyornandRaysd</strong><span>2:25</span></li>
+            <li id="2"><i class="far fa-heart"></i><strong data-num="track03.mp3">Higher Octane</strong><span>2:01</span></li>
+            <li id="3"><i class="far fa-heart"></i><strong data-num="track04.mp3">Savannah Sunshine</strong><span>3:02</span></li>
+            <li id="4"><i class="far fa-heart"></i><strong data-num="track05.mp3">Ponte De Abril</strong><span>2:54</span></li>
+            <li id="5"><i class="far fa-heart"></i><strong data-num="track06.mp3">Hot Hop Rok</strong><span>2:25</span></li>
+            <li id="6"><i class="far fa-heart"></i><strong data-num="track07.mp3">A Kiss For Amanda</strong><span>2:11</span></li>
+            <li id="7"><i class="far fa-heart"></i><strong data-num="track08.mp3">No.9 Esther&prime;s Waltz</strong><span>1:52</span></li>
+            <li id="8"><i class="far fa-heart"></i><strong data-num="track09.mp3">Catch Up</strong><span>2:00</span></li>
+        </ul>
+    </div>
+    <div id="aside">
+        <div id="new">
+            <p>新歌快報</p><img src="https://picsum.photos/200/300">
+        </div>
+        <div id="for_you">
+            <p>排行榜</p><img src="https://picsum.photos/200/300">
+        </div>
+        <div id="other">
+            <p>為您推薦</p><img src="https://picsum.photos/200/300">
+        </div>
+        <div id="other">
+            <p>華語流行</p><img src="https://picsum.photos/200/300">
+        </div>
+        <div id="other">
+            <p>韓風流行</p><img src="https://picsum.photos/200/300">
+        </div>
+    </div>
+    <div id="article">
+        <div id="now_play">
+            <div id="player"></div>
+            <p id="music_name">依然范特西</p>
+            <p id="music_singer">Jay Chou</>
+        </div>
+        <div id="control_menu">
+            <button id="play"><i class='fas fa-play'></i>
+            <button id="back"><i class='fas fa-fast-backward'></i>
+            <button id="pause"><i id="pause" class='fas fa-pause'></i>
+            <button id="next"><i class='fas fa-fast-forward'></i>
+            <button id="run"><i id="run" class='fas fa-random'></i>
+            <button id="re"><i class='fas fa-redo'></i>
+        </div>
+        <div id="volume">
+            <i class="fa fa-volume-off">
+            <input id="sound" type="range" min="0" max="100" step="10" value="100"></i>
+        </div>
+    </div>
+
+
+    <script async src="https://www.youtube.com/iframe_api"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <script src="scripts/player.js"></script>
+</body>
+</html>
